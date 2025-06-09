@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora com Histórico</title>
+  <link rel="stylesheet" href="./assets/CSS/style.css" />
+  <script src="./assets/js/calculo.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div id="display" class="display">0</div>
+      <div class="buttons">
+        <button  class="clear" data-id="clear">C</button>
+        
+        <button  data-operators>/</button>     
+        <button  data-operators>*</button>     
+        <button  data-operators>-</button>
+        <button  data-operators>+</button>
+        
+
+        
+        <button data-numbers>7</button>        
+        <button data-numbers>8</button>        
+        <button data-numbers>9</button>
+        
+
+        
+        <button data-numbers>4</button>        
+        <button data-numbers>5</button>        
+        <button data-numbers>6</button>
+        
+
+        
+        <button data-numbers>1</button>        
+        <button data-numbers>2</button>        
+        <button data-numbers>3</button>        
+        <button data-calculate class="equal">=</button>
+        <button data-numbers class="zero">0</button>        
+        <button data-numbers>.</button>
+      </div>
+    </div>
+
+    <div class="history">
+      <h2>Histórico</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Expressão</th>
+            <th>Resultado</th>
+          </tr>
+        </thead>
+        <tbody id="history-body"></tbody>
+      </table>
+    </div>
+  </div>
+  
+</body>
+</html>
